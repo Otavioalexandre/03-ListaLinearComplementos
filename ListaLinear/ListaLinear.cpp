@@ -129,7 +129,7 @@ void excluirElemento()
 
 	int pos = posicaoElemento(valor);
 
-	if (pos!=-1) {
+	if (pos != -1) {
 
 		for (int num = valor; num < nElementos; num++) {
 
@@ -140,7 +140,8 @@ void excluirElemento()
 
 		cout << "Valor excluido com sucesso!\n" << endl;
 
-	} else{
+	}
+	else {
 		cout << "Valor nao encontrado!\n" << endl;
 	}
 
