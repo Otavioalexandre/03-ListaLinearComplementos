@@ -124,31 +124,25 @@ void excluirElemento()
 
 	int valor;
 
-	cout << "Digite o valor para excluir: " << endl;
+	cout << "Digite o valor que deseja excluir: \n" << endl;
 	cin >> valor;
 
 	int pos = posicaoElemento(valor);
 
-	if (pos != -1){
-	
-		for (int num = pos; num < nElementos; num++) {
-		
-			lista[num] = lista[num + 1];
+	if (pos!=-1) {
 
+		for (int num = valor; num < nElementos; num++) {
+
+			lista[num] = lista[num + 1];
 		}
 
 		nElementos--;
 
-		cout << "Elemento excluido com sucesso! \n";
+		cout << "Valor excluido com sucesso!\n" << endl;
 
+	} else{
+		cout << "Valor nao encontrado!\n" << endl;
 	}
-	else
-	{
-		cout << "Elemento nao encontrado:\n ";
-
-	}
-
-
 
 }
 
@@ -170,10 +164,11 @@ void buscarElemento()
 
 int posicaoElemento(int busca)
 {
-	int posicao = -1;
+	int pos = -1;
 	for (int i = 0; i < nElementos; i++) {
 		if (busca == lista[i]) {
-			posicao = i;
+			pos = i;
 		}
 	}
-	return posicao;
+	return pos;
+}
