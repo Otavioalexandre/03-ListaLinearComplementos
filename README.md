@@ -1,3 +1,8 @@
+#Dados Aluno
+
+* e-mail: otavioalexandre.camargo@outlook.com
+* nome completo: Otavio Alexandre
+
 # Lista Linear
 
 Faça um fork deste repositorio e implemente a função exlcuirElemento
